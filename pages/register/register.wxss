@@ -1,0 +1,83 @@
+/* pages/register/register.wxss */
+page {
+  height: 100%;
+  position: relative;
+}
+.container {
+  background-image:url(http://rain.tunnel.qydev.com/static/hospitalCoustom/wechatImg/registerBg.jpg);
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+}
+.masking{
+  position: absolute;
+  width: 100%;
+  height:100%;
+  background: #fff;
+  opacity: 0.6;
+  
+}
+.masking2 {
+  position: absolute;
+
+}
+.logo {
+  text-align: center;
+  margin: 45rpx auto;
+}
+.logo image {
+  width:228rpx;
+  height: 228rpx;
+}
+.section {
+  position: relative;
+}
+.section_title {
+  width: 34rpx;
+  height: 34rpx;
+  position: absolute;
+  left: 20rpx;
+  top: 40rpx;
+}
+.section_button {
+  font-size: 28rpx;
+  line-height: 90rpx;
+  color: #ffffff;
+  width: 200rpx;
+  height: 90rpx;
+  position: absolute;
+  z-index: 3;
+  left: 390rpx;
+  top: 10rpx;
+  background: #ff9900;
+}
+.section_input {
+  background: #ffffff;
+  border-radius: 16rpx;
+  box-sizing: border-box;
+  width: 600rpx;
+  height: 110rpx;
+  margin: 0 auto;
+  margin-bottom: 50rpx;
+  font-size: 28rpx;
+  padding-left: 90rpx;
+}
+.btn-area {
+  width: 600rpx;
+  border-radius: 8rpx;
+  margin: 0 auto;
+}
+.btn-area button {
+  background: #ff9900;
+  color: #ffffff;
+}
+.section_gap {
+  margin-bottom: 50rpx;
+  text-align: center;
+  width: 600rpx;
+  box-sizing: border-box;
+}
+.section_gap label{
+  color: #ffffff;
+  font-size: 28rpx;
+}

@@ -1,0 +1,38 @@
+view {
+  display: block;
+}
+.imgBig {
+  width: 140rpx;
+  height: 140rpx;
+}
+.kindListItem0 {  
+  width: 100%;
+  display: flex;
+  padding-left: 30rpx;
+  border-bottom: 1rpx solid #e5e5e5;
+  height: 254rpx;
+  align-items: center;
+}
+.kindListText0 {
+  flex: 2;
+  font-size: 28rpx;
+  padding-left: 20rpx;
+}
+.kindListItem {
+  width: 100%;
+  display: flex;
+  padding-left: 30rpx;
+  border-bottom: 1rpx solid #e5e5e5;
+  height: 130rpx;
+  align-items: center;
+}
+
+.kindListText {
+  flex: 1;
+  font-size: 28rpx;
+  padding-left: 20rpx;
+}
+.imgSmall {
+  width: 50rpx;
+  height: 50rpx;
+}

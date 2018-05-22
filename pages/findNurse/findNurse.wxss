@@ -1,0 +1,53 @@
+/* pages/map/map.wxss */
+page{
+  height: 100%;
+  position: relative;
+  background: #faf6f7;
+}
+.mapWrap {
+  height: 700rpx;
+  margin: auto 20rpx;
+}
+map{
+  width: 100%;
+  height: 100%;
+}
+.popSetting{
+  border-radius: 14rpx;
+  background: #ffffff;
+  border: 1rpx solid #834e00; 
+  background: #fff;
+  margin: 20rpx;
+}
+.picker{
+  height: 84rpx;
+  border-bottom: 1px solid #e2e0e2;
+  margin: auto 10rpx;
+  line-height: 84rpx;
+  font-size: 28rpx;
+  color: #999;
+}
+.apply{
+  width: 80%;
+  margin: 20rpx auto;
+  height: 84rpx;
+  line-height: 84rpx;
+  font-size: 28rpx;
+  text-align: center;
+  background: #834e00;
+  color: #ffffff;
+  border-radius: 10rpx;
+}
+
+.radio-group {
+  font-size: 28rpx;
+  display: flex;
+  justify-content: center;
+  height: 84rpx;
+  margin: auto 10rpx;
+  line-height: 84rpx;
+  border-bottom:1px solid #e2e0e2;
+}
+.radio {
+  flex: 1;
+}

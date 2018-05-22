@@ -1,0 +1,57 @@
+{
+  "pages":[
+    "pages/nurseIndex/nurseIndex",
+    
+    "pages/findNurse/findNurse",
+    
+    "pages/index/index",
+    
+    "pages/fastSubscribe/fastSubscribe",
+    "pages/mine/mine",
+    "pages/login-account/login-account",
+    
+    "pages/setting/setting",
+    "pages/login/login",
+    "pages/register/register",
+    "pages/ChineseMedicine/ChineseMedicine",
+    "pages/accountManage/accountManage"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#f5efea",
+    "navigationBarTitleText": "普陀区互联网医院",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh":true,
+    "backgroundColor": "#f5efea"
+  },
+  "debug":true,
+  "tabBar": {
+    "color": "#b6b6b6",
+    "selectedColor": "#834e00",
+    "backgroundColor": "#f7f7f7",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "pages/img/ico11.png",
+        "selectedIconPath": "pages/img/ico01.png"
+      },
+      {
+        "pagePath": "pages/ChineseMedicine/ChineseMedicine",
+        "text": "特色中医",
+        "iconPath": "pages/img/ico12.png",
+        "selectedIconPath": "pages/img/ico02.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "pages/img/ico13.png",
+        "selectedIconPath": "pages/img/ico03.png"
+      }
+    ]
+  },
+    "networkTimeout": {
+      "request": 10000
+    }
+}

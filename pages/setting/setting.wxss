@@ -1,0 +1,31 @@
+/* pages/setting/setting.wxss */
+
+.wrap-nav {
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  height: 128rpx;
+  border-bottom: 1rpx solid #e5e5e5;
+}
+.setting-nav {
+  font-size: 30rpx;
+  /* font-weight: bold; */
+  padding-left: 30rpx;
+  flex:4;
+}
+.wrap-ico-nav {
+  flex: 1;
+  text-align: right;
+  padding-right: 30rpx;
+}
+.ico-nav {
+  width: 18rpx;
+  height: 33rpx;
+}
+button {
+  width: 700rpx;
+  height: 100rpx;
+  background: #996633;
+  margin-top: 166rpx;
+  color: #fff;
+}

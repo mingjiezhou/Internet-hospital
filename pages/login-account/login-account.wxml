@@ -1,0 +1,35 @@
+<!--pages/login-account/login-account.wxml-->
+<view class='container'>
+<view class='masking'></view>
+<view class='masking2'>
+  <view class='logo'>
+    <image src='../img/biglogo.png'></image>
+  </view>
+  <view class='titleContent'>
+    <text class='accountLogin'>账号登录</text>|
+    <text class='passwordLogin' bindtap='goLogin'>快速登录</text>
+  </view>
+  <view class='titleIco'></view>
+  <form bindsubmit="formSubmit">
+
+    <view class="section">
+      <image class='section_title' src='{{globalUrl}}/static/hospitalCoustom/wechatImg/log01.jpg'></image>
+      <input class='section_input' bindinput='phoneNumber' maxlength='11' name="input1" value='{{phoneNumber}}' placeholder="请输入手机号" />
+    </view>
+    <view class="section">
+      <image class='section_title' src='{{globalUrl}}/static/hospitalCoustom/wechatImg/log02.jpg'></image>
+      <input class='section_input' password='true' name="input4" placeholder="请输入密码" />
+    </view>
+   
+    <view class="btn-area">
+      <button formType="submit">登录</button>
+    </view>
+  </form>
+  <view class='fooWrap clearfix'>
+    <text class="foo left">忘记密码?</text>
+    <text class="foo right" bindtap='goRegister'>快速注册</text>
+  </view>
+</view>
+</view>
+
+

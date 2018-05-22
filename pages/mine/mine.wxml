@@ -1,0 +1,33 @@
+
+<view class='container'>
+  <navigator class='kindListItem0' url='{{url}}' open-type='{{openType}}'>
+    <image class='kindListImg imgBig' src='{{userPhoto}}'></image>
+    <view class='kindListText0'>{{name}}</view>
+    <view class='kindListText'>账户管理</view>
+  </navigator>
+
+  <view class='kindListItem'>
+    <image class='kindListImg imgSmall' src='../img/mineico1.png'></image>
+    <view class='kindListText'>我的预约</view>
+  </view>
+  <view class='kindListItem'>
+    <image class='kindListImg imgSmall' src='../img/mineico2.png'></image>
+    <view class='kindListText'>我的就诊卡</view>
+  </view>
+  <view class='kindListItem'>
+    <image class='kindListImg imgSmall' src='../img/mineico3.png'></image>
+    <view class='kindListText'>我的膏方</view>
+  </view>
+  <navigator class='kindListItem' url='../setting/setting'>
+    <image class='kindListImg imgSmall' src='../img/mineico4.png'></image>
+    <view class='kindListText'>设置</view>
+  </navigator>
+  <view class='kindListItem'>
+    <image class='kindListImg imgSmall' src='../img/mineico5.png'></image>
+    <view class='kindListText'>建议反馈</view>
+  </view>
+  <view class='kindListItem'>
+    <image class='kindListImg imgSmall' src='../img/mineico6.png'></image>
+    <view class='kindListText'>关于</view>
+  </view>
+</view>

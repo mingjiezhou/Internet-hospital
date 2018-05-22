@@ -1,0 +1,64 @@
+<!--pages/fastSubscribe/fastSubscribe.wxml-->
+<!-- <import src="../mine_module/select.wxml"/> -->
+<view>
+  <!-- <template is="select" data="{{...select}}"/> -->
+  <view  class="seiviceRange person_box">
+    <image class='ico' src='../img/nurseico1.png'></image>
+    <view class="phone_one" bindtap="clickPerson">
+      <view class="phone_personal">{{firstPerson}}</view>
+        <!-- 三目法判断图片要不要旋转180。 -->
+      <image src="{{globalUrl2}}/static/hospitalCoustom/images/wechatImg/select.png" class="personal_image {{selectArea ? 'rotateRight' :''}}"></image>
+    </view>
+    <view class="phone_select phone_select1" hidden="{{selectPerson}}">
+      <view class="select_one" bindtap="mySelect" data-km="{{item}}" data-me="{{item.areaName}}" wx:for="{{areaList}}">{{item.areaName}}</view>
+    </view>
+  </view>
+
+  <!--选择服务类别  -->
+  <view  class="seiviceRange person_box">
+    <image class='ico' src='../img/nurseico2.png'></image>
+    <view class="phone_one" bindtap="clickPerson02">
+      <view class="phone_personal">{{firstPerson2}}</view>
+        <!-- 三目法判断图片要不要旋转180。 -->
+      <image src="{{globalUrl2}}/static/hospitalCoustom/images/wechatImg/select.png" class="personal_image {{selectArea2 ? 'rotateRight' :''}}"></image>
+    </view>
+    <view class="phone_select" hidden="{{selectPerson2}}">
+      <view class="select_one" bindtap="mySelect02" data-km="{{item}}" data-me="{{item.catName}}" wx:for="{{careServiceList}}">{{item.catName}}</view>
+    </view>
+  </view>
+
+  <view class='selectDate'>
+    <image class='ico' src='../img/nurseico3.png'></image>
+    <view class="section">
+      <picker mode="date" value="{{date}}" start="2018-01-01" end="2019-01-01" bindchange="bindDateChange">
+        <view class="picker">
+          {{date}}
+        </view>
+      </picker>
+    </view>    
+  </view>
+
+  <view class='selectDate'>
+    <image class='ico' src='../img/nurseico4.png'></image>
+    <input class='phone' type='number' maxlength= '11' placeholder='请输入您的联系方式' value='{{phone}}' bindinput='phone'></input>
+  </view>
+  
+  <view class='selectDate'>
+    <image class='ico' src='../img/nurseico5.png'></image>
+    <input class='location phone' type='text' placeholder='请输入您的家庭住址' value='{{location}}' bindinput='location'></input>
+  </view>
+  
+  <view class='selectDate'>
+    <image class='ico' src='../img/nurseico6.png'></image>
+    <input class='phone price' type='text' value='{{price}}' disabled></input>
+    <text class='des'>元（预付金！）</text>
+  </view>
+
+  <view class='selectDate'>
+    <image class='ico' src='../img/nurseico6.png'></image>
+    <textarea class='phone remark' placeholder='可以简单说明您的其它要求' value='{{remark}}' bindinput='remark'></textarea>
+  </view>
+
+  <button bindtap='submit'>提交</button>
+</view>
+

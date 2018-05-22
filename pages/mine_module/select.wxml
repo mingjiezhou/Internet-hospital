@@ -1,0 +1,13 @@
+<template name="select">
+  <view  class="seiviceRange person_box">
+    <text class='seiviceRangeText1'>周边</text>
+    <view class="phone_one" bindtap="clickPerson">
+      <view class="phone_personal">{{firstPerson}}</view>
+       <!-- 三目法判断图片要不要旋转180。 -->
+      <image src="{{globalUrl2}}/static/hospitalCoustom/images/wechatImg/select.png" class="personal_image {{selectArea ? 'rotateRight' :''}}"></image>
+    </view>
+    <view class="phone_select" hidden="{{selectPerson}}">
+      <view class="select_one" bindtap="mySelect" data-km="{{item}}" data-me="{{item}}公里以内" wx:for="{{List}}">{{item}}公里以内</view>
+    </view>
+  </view>
+</template>

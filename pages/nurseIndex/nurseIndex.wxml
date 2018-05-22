@@ -1,0 +1,50 @@
+<!--pages/nurseIndex/nurseIndex.wxml-->
+<view>
+  <view>
+    <image class='banner' src='{{globalUrl+banner}}'></image>
+  </view>
+  <view class='publicityList'>
+    <view class='publicityIcoDetail' wx:for="{{publicityIco}}">
+      <image class='publicityIco' src='{{globalUrl+item.image}}'></image> 
+      <text class='publicityText'>{{item.title}}</text>
+    </view>
+  </view>
+<!--服务列表  -->
+  <view class='serviceList'>
+    <navigator class='serviceDetail' wx:for="{{serviceType}}" url="../findNurse/findNurse?type={{item.id}}">
+      <image class='serviceIco' src='{{globalUrl+item.homeIcon}}'></image>
+      <text class='serviceText'>{{item.catName}}</text>
+    </navigator>
+  </view>
+
+  <navigator class='serviceFast' url='../fastSubscribe/fastSubscribe'>
+    <image class='serviceFastIco' src='{{globalUrl+serviceFast.image}}'></image>
+    <view class='serviceFastText'>
+      <text class='serviceFastText1'>快速<text>下单</text></text>
+      <text class='serviceFastText2 '>最快<text>1小时</text>到岗</text>
+    </view>
+  </navigator>
+  <view  class="seiviceRange person_box">
+    <text class='seiviceRangeText1'>周边</text>
+
+    <view class="phone_one" bindtap="clickPerson">
+      <view class="phone_personal">{{firstPerson}}</view>
+       <!-- 三目法判断图片要不要旋转180。 -->
+      <image src="{{globalUrl2}}/static/hospitalCoustom/images/wechatImg/select.png" class="personal_image {{selectArea ? 'rotateRight' :''}}"></image>
+    </view>
+    <view class="phone_select" hidden="{{selectPerson}}">
+      <view class="select_one" bindtap="mySelect" data-km="{{item}}" data-me="{{item}}公里以内" wx:for="{{serviceRange}}">{{item}}公里以内</view>
+    </view>
+  </view>
+  <view class='companyList'>
+    <view class='companyDetail' wx:for="{{companyList}}">
+      <image class='companyImg' src="{{globalUrl+item.icon}}"></image>
+      <view class='companyText'>
+        <text class='companyTextPosition'>{{item.distance}}m</text>
+        <text class='companyText1'>{{item.name}}\n</text>
+        <text class='companyText2'>联系电话：{{item.mobile}}\n</text>
+        <text class='companyText3'>地址：{{item.address}}</text>
+      </view>
+    </view>
+  </view>
+</view>

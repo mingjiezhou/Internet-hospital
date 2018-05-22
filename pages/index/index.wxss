@@ -1,0 +1,230 @@
+/**index.wxss**/
+.indexico {
+  width: 100%;
+}
+
+.swiper-wrap {
+  display: flex;
+  flex-direction: row;
+}
+.swiper {
+  width: 80%;
+  float: right;
+}
+.swiper swiper {
+  height: 156rpx; 
+  /* background: pink; */
+}
+.swiperDes {
+  width: 170rpx;
+  height: 156rpx;
+  float: left;
+  position: relative;
+}
+.swiperDes text {
+  font-size: 30rpx;
+  color: #834e00;
+  position: absolute;
+  top: 50%;
+  left: 20rpx;
+  margin-top: -15rpx;
+}
+.swiperDes image {
+  width:17rpx;
+  height:104rpx;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -52rpx;
+}
+
+.swiper text {
+  color: #666666;
+  font-size: 24rpx;
+  line-height: 32rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+
+  position: absolute;
+  top: 50%;
+  margin-top: -32rpx;
+}
+
+/* 三大功能部分 */
+.functionlist {
+  flex-wrap:wrap;
+
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  padding: 40rpx 0;
+  border-top: 10rpx solid #f6f6f6;
+}
+.functionlist > view {
+  background: #f6f6f6;
+}
+.serverlist > view {
+  border: 1rpx solid #834e00;
+}
+.functionlist > view, .serverlist > view {
+  width: 210rpx;
+  height: 210rpx;
+  margin: 0 20rpx;
+  position: relative;
+}
+.functionlist image {
+  width: 120rpx;
+  height: 120rpx;
+}
+.serverlist image {
+  width: 58rpx;
+  height: 90rpx;
+}
+
+.functionDes1 {
+  font-size: 26rpx;
+  line-height: 40rpx;
+}
+.functionDes2 {
+  font-size: 22rpx;
+  line-height: 30rpx;
+}
+
+.serverlist{
+  flex-wrap:wrap;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  padding: 40rpx 0;
+  border-top: 10rpx solid #f6f6f6;
+  justify-content: center;
+}
+
+/* 医生列表 */
+.doctorico {
+  width: 150rpx;
+  height: 150rpx;
+  position: absolute;
+  left: 20rpx;
+}
+.doctorDes {
+  position: absolute;
+  left: 210rpx;
+  width: 520rpx;
+}
+.doctorDes .fontsize1 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+.doctorDes .fontsize2 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+.fontsize1 {
+  font-size: 28rpx;
+  font-weight: bold;
+}
+.fontsize2 {
+  font-size: 22rpx;
+}
+.doctorCategory {
+
+}
+.doctorList {
+  border-top: 10rpx solid #f6f6f6;
+  border-bottom: 10rpx solid #f6f6f6;
+}
+.icotitle {
+  text-align: center;
+}
+.icoleft, .icoright {
+  width: 55rpx;
+  height: 21rpx;
+}
+.icodes {
+  font-size: 28rpx;
+  color: #834e00;
+}
+.swiperdoctorlist {
+  border-bottom: 1rpx solid #f6f6f6;
+  padding-top: 50rpx;
+}
+.moreDoctorInfo {
+  text-align: center;
+  color: #834e00;
+  font-size: 28rpx;
+  padding: 40rpx 0;
+  border-bottom: 10rpx solid #f6f6f6;
+}
+.newsfirst {
+  position: relative;
+  height: 180rpx;
+  padding-top: 50rpx;
+}
+.newslist {
+  position: relative;
+  padding: 0 20rpx;
+  height: 32rpx;
+}
+.newslist text {
+  font-size: 24rpx;
+}
+.newslist text:nth-child(1) {
+  position: absolute;
+  
+}
+.newslist text:nth-last-child(1) {
+  position: absolute;
+  right: 20rpx;
+}
+.newslistwrap {
+  padding-bottom: 40rpx;
+  border-bottom: 1rpx solid #f6f6f6; 
+}
+.moreNewsInfo {
+  text-align: center;
+  color: #834e00;
+  font-size: 28rpx;
+  padding: 40rpx 0;
+}
+
+.dataright {
+  position: absolute;
+  right: 0;
+}
+
+
+
+/* 护工服务 */
+.serverIntroduce {
+  display: flex;
+  background: #f6f6f6;
+  margin: 0 20rpx 20rpx 20rpx;
+}
+.serverIntroduce image {
+  width: 248rpx;
+  height: 130rpx;
+  margin-left: 46rpx;
+  margin-right: 30rpx;
+  flex: 1;
+}
+.textIntroduce {
+  flex: 2;
+  padding-top: 16rpx;
+}
+.textIntroduce .text1 {
+  font-size: 30rpx;
+  line-height: 50rpx;
+  color: #333333;
+}
+.textIntroduce .text2 {
+  font-size: 24rpx;
+  line-height: 44rpx;
+  color: #666666;
+}

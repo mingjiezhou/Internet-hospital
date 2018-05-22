@@ -1,0 +1,137 @@
+<!--index.wxml-->
+<view>
+  <view>
+    <image class='indexico' src='../img/indexico.png'></image>
+  </view>
+  <view class='swiper-wrap'>
+    <view class='swiperDes'>
+      <text>停止通知</text>
+       <image src='../img/swiperico.png'></image> 
+    </view>
+    <view class='swiper'>
+      <swiper autoplay='true' vertical='true' class='swiper1'>
+        <swiper-item>
+          <text>测试文字测试文字测试文字测试文字测试文字测试文字字测试文字测试文字字测试文字测试文字字测试文字测试文字字测试文字测试文字字测试文字测试文字字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字</text>
+        </swiper-item>
+        <swiper-item>
+          <text>测试文字测试文字测试文字测试文字测试文字测试文字字测试文字测试文字字测试文字测试文字字测试文字测试文字字测试文字测试文字字测试文字测试文字字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字</text>
+        </swiper-item>
+      </swiper>
+    </view>
+  </view>
+
+  <view class='functionlist'>
+    <view bindtap='call120'>
+      <image src='../img/120.png'></image>
+      <view class='functionDes1'>\n120呼叫\n</view>
+      <view class='functionDes2'>一键直拨</view>
+    </view>
+    <view>
+      <image src='../img/subscribe.png'></image>
+      <view class='functionDes1'>\n预约挂号\n</view>
+      <view class='functionDes2'>在线预约，省时省力</view>
+    </view>
+    <view>
+      <image src='../img/queue.png'></image>
+      <view class='functionDes1'>\n排队叫号\n</view>
+      <view class='functionDes2'>现场叫号，实时更新</view>
+    </view>
+  </view>
+  <!-- <view class='serverlist'>
+    <view bindtap='gomap'>
+      <image src='../img/server1.png'></image>
+      <view class='functionDes1'>\n找护工（标准）\n</view>
+      <view class='functionDes2'>¥500元/天</view>
+    </view>
+    <view bindtap='gomap'>
+      <image src='../img/server2.png'></image>
+      <view class='functionDes1'>\n找护工（重症）\n</view>
+      <view class='functionDes2'>¥800元/天</view>
+    </view>
+  </view> -->
+  <navigator class='serverIntroduce' url='../nurseIndex/nurseIndex' open-type='navigate'>
+    <image src='{{globalUrl}}/static/hospitalCoustom/images/wechatImg/bg1.png'></image>
+    <view class='textIntroduce'>
+      <view class='text1'>专业护工24小时接单不停歇</view>
+      <view class='text2'>助老护理、医院护理、居家护理</view>
+    </view>
+  </navigator>
+  <view class='doctorList'>
+    <view class='icotitle'>
+      <image class='icoleft' src='../img/left.png'></image>
+      <text class='icodes'>专家推荐</text>
+      <image class='icoright' src='../img/right.png'></image>
+    </view>
+    <swiper autoplay='true' indicator-dots='true' class='swiperdoctorlist'>
+        <swiper-item>
+          <image class='doctorico' src='../img/doctorico.png'></image>
+          <view class='doctorDes'>
+            <text class='doctorName fontsize1'>彭文</text>
+            <text class='doctorTitle fontsize2'>主任医师\n</text>
+            <text class='doctorAdept fontsize2'>擅长糖尿病诊治\n</text>
+            <text class='doctorCategory fontsize1'>现开设\n</text>
+            <text class='doctorCategoryDetails fontsize2'>肾病、肾风湿性关节炎</text> 
+          </view>
+        </swiper-item>
+        <swiper-item>
+          <image class='doctorico' src='../img/doctorico.png'></image>
+          <view class='doctorDes'>
+            <text class='doctorName fontsize1'>彭文</text>
+            <text class='doctorTitle fontsize2'>主任医师\n</text>
+            <text class='doctorAdept fontsize2'>擅长糖尿病诊治\n</text>
+            <text class='doctorCategory fontsize1'>现开设\n</text>
+            <text class='doctorCategoryDetails fontsize2'>肾病、肾风湿性关节炎</text> 
+          </view>
+        </swiper-item>
+        <swiper-item>
+          <image class='doctorico' src='../img/doctorico.png'></image>
+          <view class='doctorDes'>
+            <text class='doctorName fontsize1'>张三</text>
+            <text class='doctorTitle fontsize2'>副主任医师\n</text>
+            <text class='doctorAdept fontsize2'>擅长心血管病诊治\n</text>
+            <text class='doctorCategory fontsize1'>现开设\n</text>
+            <text class='doctorCategoryDetails fontsize2'>肾病、肾风湿性关节炎</text> 
+          </view>
+        </swiper-item>
+      </swiper>
+      <view class='moreDoctorInfo'>
+        <text>查看更多专家信息>></text>
+      </view>
+  </view>
+
+  <view> 
+    <view class='icotitle'>
+      <image class='icoleft' src='../img/left.png'></image>
+      <text class='icodes'>健康资讯</text>
+      <image class='icoright' src='../img/right.png'></image>
+    </view>
+    <view>
+      <view class='newsfirst'>
+          <image class='doctorico' src='../img/newsico.png'></image>
+          <view class='doctorDes'>
+            <text class='fontsize1'>医生说治疗脱发危机需要疗脱发危机需要疗脱发危机需要疗脱发危机需发危机需要疗脱发危机需\n</text>
+            <text class='fontsize2'>脱发在疗脱发危机需要我国不是稀发在疗脱发危机需要我国不是稀发在疗脱发危机需要我国罕事...\n</text>
+            <text class='dataright fontsize2'>2018-03-02</text>
+          </view>
+      </view>
+      <view class='newslistwrap'>
+        <view class='newslist'>
+          <text>如何让冠心病人平安过冬？</text>
+          <text>2018-03-15</text>
+        </view>
+        <view class='newslist'>
+          <text>如何让冠心病人平安过冬？</text>
+          <text>2018-03-15</text>
+        </view>
+        <view class='newslist'>
+          <text>如何让冠心病人平安过冬？</text>
+          <text>2018-03-15</text>
+        </view>
+      </view>
+    </view>
+    
+    <view class='moreNewsInfo'>
+      <text>查看更多健康资讯>></text>
+    </view>
+  </view>
+</view>

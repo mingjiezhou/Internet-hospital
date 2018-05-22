@@ -1,0 +1,32 @@
+<!--pages/map/map.wxml-->
+<view class='mapWrap'>
+  <map id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="16" controls="{{controls}}" bindcontroltap="controltap"  markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" show-location>
+  </map>
+</view>
+<view class='popSetting'>
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class="picker">
+      服务类型： {{array[index]}}
+    </view>
+  </picker>
+  <view>
+    <radio-group class="radio-group" bindchange="radioChange">
+      <label class="radio" wx:for="{{radio}}">
+        <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+      </label>
+    </radio-group>
+  </view>
+  <picker mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
+    <view class="picker">
+      选择时间: {{time}}
+    </view>
+  </picker>
+  <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+    <view class="picker">
+      当前日期: {{date}}
+    </view>
+  </picker>
+  <view class='apply'>
+    立即预约
+  </view>
+</view>

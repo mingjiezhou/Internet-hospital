@@ -1,0 +1,61 @@
+<!--pages/ChineseMedicine/ChineseMedicine.wxml-->
+<view>
+  <view>
+    <image class='banner' src='../img/tsbanner.png'></image>
+  </view>
+  <view class='roomico'>
+    <image src='../img/roombg1.png' mode='widthFix'></image>
+    <text>特色科室</text>
+  </view>
+  <view class='roomtailwrap'>
+    <view class='roomdetail'>
+      <image src='../img/roombg2.png'></image>
+      <text>中医问诊</text>
+    </view>
+    <view class='roomdetail'>
+      <image src='../img/roombg2.png'></image>
+      <text>骨烧伤科</text>
+    </view>
+    <view class='roomdetail'>
+      <image src='../img/roombg2.png'></image>
+      <text>心理科室</text>
+    </view>
+    <view class='roomdetail'>
+      <image src='../img/roombg2.png'></image>
+      <text>护理科室</text>
+    </view>
+    <view class='roomdetail'>
+      <image src='../img/roombg2.png'></image>
+      <text>特色科室</text>
+    </view>
+    <view class='roomdetail'>
+      <image src='../img/roombg2.png'></image>
+      <text>特色科室</text>
+    </view>
+    <view class='roomdetail'>
+      <image src='../img/roombg2.png'></image>
+      <text>特色科室</text>
+    </view>
+    <view class='roomdetail'>
+      <image src='../img/roombg2.png'></image>
+      <text>特色科室</text>
+    </view>
+  </view>
+  <view class='icotitle'>
+    <image class='icoleft' src='../img/left.png'></image>
+    <text class='icodes'>老中医说</text>
+    <image class='icoright' src='../img/right.png'></image>
+  </view>
+  <view class='roomtailwrap'>
+    <view class='newsdetail'>
+      <image src='../img/ts_left.png'></image>
+      <text>看看你是否属于湿重？\n</text>
+      <text>测试分开来了惊世毒妃李发斯蒂芬就</text>
+    </view>
+    <view class='newsdetail'>
+      <image src='../img/ts_right.png'></image>
+      <text>看看你是否属于湿重？\n</text>
+      <text>测试分开来了惊世毒妃李发斯蒂芬就</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,10 @@
+<!--pages/setting/setting.wxml-->
+<view>
+  <navigator class='wrap-nav' url='../login/login' open-type="navigate" hover-class='none'>
+    <view class='setting-nav'>修改密码</view>
+    <view class='wrap-ico-nav'>
+      <image class='ico-nav' src='http://rain.tunnel.qydev.com/static/hospitalCoustom/images/pay_10.png'></image>
+    </view>
+  </navigator>
+  <button bindtap='logout'>退出登录</button>
+</view>
