@@ -37,7 +37,7 @@
       <view class='functionDes2'>现场叫号，实时更新</view>
     </view>
   </view>
-  <!-- <view class='serverlist'>
+  <view class='serverlist'>
     <view bindtap='gomap'>
       <image src='../img/server1.png'></image>
       <view class='functionDes1'>\n找护工（标准）\n</view>
@@ -48,7 +48,7 @@
       <view class='functionDes1'>\n找护工（重症）\n</view>
       <view class='functionDes2'>¥800元/天</view>
     </view>
-  </view> -->
+  </view>
   <navigator class='serverIntroduce' url='../nurseIndex/nurseIndex' open-type='navigate'>
     <image src='{{globalUrl}}/static/hospitalCoustom/images/wechatImg/bg1.png'></image>
     <view class='textIntroduce'>

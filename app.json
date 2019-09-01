@@ -1,30 +1,26 @@
 {
-  "pages":[
-    "pages/nurseIndex/nurseIndex",
-    
-    "pages/findNurse/findNurse",
-    
+  "pages": [
     "pages/index/index",
-    
+    "pages/nurseIndex/nurseIndex",
+    "pages/findNurse/findNurse",
     "pages/fastSubscribe/fastSubscribe",
     "pages/mine/mine",
     "pages/login-account/login-account",
-    
     "pages/setting/setting",
     "pages/login/login",
     "pages/register/register",
     "pages/ChineseMedicine/ChineseMedicine",
     "pages/accountManage/accountManage"
   ],
-  "window":{
-    "backgroundTextStyle":"dark",
+  "window": {
+    "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#f5efea",
     "navigationBarTitleText": "普陀区互联网医院",
-    "navigationBarTextStyle":"black",
-    "enablePullDownRefresh":true,
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true,
     "backgroundColor": "#f5efea"
   },
-  "debug":true,
+  "debug": true,
   "tabBar": {
     "color": "#b6b6b6",
     "selectedColor": "#834e00",
@@ -51,7 +47,8 @@
       }
     ]
   },
-    "networkTimeout": {
-      "request": 10000
-    }
+  "networkTimeout": {
+    "request": 10000
+  },
+  "sitemapLocation": "sitemap.json"
 }
